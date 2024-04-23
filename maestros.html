@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.19/sweetalert2.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Maestros</h1>
+                <button id="agregarEstandarBtn" class="btn btn-primary mt-3">Agregar Nuevo Profesor</button>
+                <ul id="listaEstandares" class="list-group mt-3"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Función para mostrar el cuadro de entrada y el mensaje de confirmación al agregar un estándar
+        function mostrarMensaje() {
+            Swal.fire({
+                title: 'Agregar nuevo estándar',
+                html:
+                    '<input id="input1" class="swal2-input" placeholder="Ingrese el nombre">' +
+                    '<input id="input2" class="swal2-input" placeholder="Ingrese el apellido">',
+                showCancelButton: true,
+                confirmButtonText: 'Agregar',
+                cancelButtonText: 'Cancelar',
+                preConfirm: () => {
+                    const input1 = document.getElementById('input1').value;
+                    const input2 = document.getElementById('input2').value;
+                    if (!input1 || !input2) {
+                        Swal.showValidationMessage('Por favor complete ambos campos');
+                    }
+                    return [input1, input2];
+                }
+            }).then((resultado) => {
+                if (resultado.isConfirmed) {
+                    // Agregar los valores a la lista en la página
+                    const valores = resultado.value;
+                    const listaEstandares = document.getElementById('listaEstandares');
+                    const nuevoItem = document.createElement('li');
+                    nuevoItem.classList.add('list-group-item');
+                    nuevoItem.textContent = 'Nombre: ' + valores[0] + ',   Apellido: ' + valores[1];
+                    listaEstandares.appendChild(nuevoItem);
+
+                    // Mostrar mensaje de éxito
+                    Swal.fire('Maestro agregado agregado', 'Se ha agregado correctamente', 'success');
+                }
+            });
+        }
+
+        // Asignar evento de clic al botón "Agregar nuevo estándar"
+        document.getElementById('agregarEstandarBtn').addEventListener('click', function() {
+            mostrarMensaje();
+        });
+    </script>
+</body>
+</html>

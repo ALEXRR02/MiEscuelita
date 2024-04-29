@@ -10,53 +10,62 @@
 <body>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>Maestros</h1>
-                <button id="agregarEstandarBtn" class="btn btn-primary mt-3">Agregar Nuevo Profesor</button>
-                <ul id="listaEstandares" class="list-group mt-3"></ul>
+            <div class="col-md-6">
+                <h1>Lista de Maestros</h1>
+                <ul id="listaMaestros" class="list-group">
+                    <li class="list-group-item">Sofía González, 22 años</li>
+                    <li class="list-group-item">Alejandro Ramírez, 20 años</li>
+                    <li class="list-group-item">Valentina Herrera, 23 años</li>
+                    <li class="list-group-item">Martín Díaz, 18 años</li>
+                    <li class="list-group-item">Camila Fernández, 25 años</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <h1>Agregar Nuevo Maestro</h1>
+                <button id="agregarMaestroBtn" class="btn btn-primary mt-3">Agregar Nuevo Profesor</button>
             </div>
         </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        // Función para mostrar el cuadro de entrada y el mensaje de confirmación al agregar un estándar
-        function mostrarMensaje() {
+        function mostrarCuadroAgregarMaestro() {
             Swal.fire({
-                title: 'Agregar nuevo estándar',
+                title: 'Agregar nuevo maestro',
                 html:
-                    '<input id="input1" class="swal2-input" placeholder="Ingrese el nombre">' +
-                    '<input id="input2" class="swal2-input" placeholder="Ingrese el apellido">',
+                    '<input id="inputNombre" class="swal2-input" placeholder="Nombre">' +
+                    '<input id="inputApellido" class="swal2-input" placeholder="Apellido">' +
+                    '<input id="inputEdad" class="swal2-input" placeholder="Edad">',
                 showCancelButton: true,
                 confirmButtonText: 'Agregar',
                 cancelButtonText: 'Cancelar',
                 preConfirm: () => {
-                    const input1 = document.getElementById('input1').value;
-                    const input2 = document.getElementById('input2').value;
-                    if (!input1 || !input2) {
-                        Swal.showValidationMessage('Por favor complete ambos campos');
+                    const nombre = document.getElementById('inputNombre').value;
+                    const apellido = document.getElementById('inputApellido').value;
+                    const edad = document.getElementById('inputEdad').value;
+                    if (!nombre || !apellido || !edad) {
+                        Swal.showValidationMessage('Por favor complete todos los campos');
                     }
-                    return [input1, input2];
+                    return [nombre, apellido, edad];
                 }
             }).then((resultado) => {
                 if (resultado.isConfirmed) {
-                    // Agregar los valores a la lista en la página
                     const valores = resultado.value;
-                    const listaEstandares = document.getElementById('listaEstandares');
+                    const listaMaestros = document.getElementById('listaMaestros');
                     const nuevoItem = document.createElement('li');
                     nuevoItem.classList.add('list-group-item');
-                    nuevoItem.textContent = 'Nombre: ' + valores[0] + ',   Apellido: ' + valores[1];
-                    listaEstandares.appendChild(nuevoItem);
+                    nuevoItem.textContent = '' + valores[0] + ' ' + valores[1] + ', ' + valores[2] + ' años';
+                    listaMaestros.appendChild(nuevoItem);
 
                     // Mostrar mensaje de éxito
-                    Swal.fire('Maestro agregado agregado', 'Se ha agregado correctamente', 'success');
+                    Swal.fire('Maestro agregado', 'Se ha agregado correctamente', 'success');
                 }
             });
         }
 
-        // Asignar evento de clic al botón "Agregar nuevo estándar"
-        document.getElementById('agregarEstandarBtn').addEventListener('click', function() {
-            mostrarMensaje();
+        //evento de clic al botón "Agregar nuevo maestro"
+        document.getElementById('agregarMaestroBtn').addEventListener('click', function() {
+            mostrarCuadroAgregarMaestro();
         });
     </script>
 </body>

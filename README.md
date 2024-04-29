@@ -36,3 +36,8 @@ Luego, se debe abrir la carpeta del proyecto dentro del IDE.
 # Uso
 Este software está destinado para uso interno dentro del departamento correspondiente de la empresa.
 Los permisos de acceso variarán según las responsabilidades individuales de cada usuario.
+
+# Drone para Pruebas
+Cada vez que realizamos una modificación en el repositorio de GitHub, Drone automáticamente ejecuta una serie de pruebas para verificar la integridad y el rendimiento del código. Estas pruebas incluyen la compilación del proyecto, la ejecución de pruebas unitarias y cualquier otra validación necesaria para asegurar que el código cumple con nuestros estándares de calidad.
+
+Al utilizar Drone, hemos podido automatizar gran parte del proceso de desarrollo, lo que nos permite detectar y solucionar problemas de manera más rápida y eficiente. Además, al integrar Drone con nuestras herramientas de control de versiones y despliegue, hemos logrado un flujo de trabajo más fluido y coherente en todo el ciclo de vida del desarrollo de nuestro proyecto.

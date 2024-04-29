@@ -1,6 +1,14 @@
-# MiEscuelita
-Software de Guarderia Mi escuelita
+# Taller de productividad basada en tecnologicas
+Software de gestion adiministrativa para la Guarderia Mi escuelita 
 
+# Plantamiento del problema
+La Guardería Mi Escuelita, ubicada en Toluca, Estado de México, enfrenta 
+desafíos significativos en la gestión de archivos relacionados con la 
+afiliación al Instituto Mexicano del Seguro Social (IMSS) y los estándares 
+de calidad requeridos por dicha institución. A pesar de los esfuerzos 
+manuales por parte del personal administrativo, la gestión de documentos 
+se ha vuelto compleja y poco eficiente, lo que impacta negativamente en la 
+operatividad y el cumplimiento normativo de la guardería.
 
 # Aviso sobre el desarrollo del proyecto
 Este proyecto ha sido desarrollado principalmente en HTML y JavaScript, aunque su implementación final se realizará en Java. Nos gustaría proporcionar una explicación sobre esta elección.

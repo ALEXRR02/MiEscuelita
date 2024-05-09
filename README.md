@@ -88,6 +88,32 @@ Implementación en producción en un ambiente local:
 Para realizar cambios en el código, se debe instalar y configurar un entorno de desarrollo integrado (IDE) preferido.
 Luego, se debe abrir la carpeta del proyecto dentro del IDE.
 
+# Configuración
+Archivos de Configuración:
+
+application.properties: Este archivo contiene la configuración general de la aplicación, como la URL de la base de datos, el puerto del servidor, etc. Se encuentra en la carpeta de recursos del proyecto.
+Configuración de los Requerimientos:
+
+Servidores de Aplicación y Bases de Datos:
+server.port: Puerto en el que se ejecutará el servidor de la aplicación. Valor predeterminado: 8080.
+spring.datasource.url: URL de conexión a la base de datos MySQL. Por ejemplo: jdbc:mysql://localhost:3306/nombre_base_datos.
+spring.datasource.username: Nombre de usuario de la base de datos MySQL.
+spring.datasource.password: Contraseña de la base de datos MySQL.
+Paquetes Adicionales:
+spring.version: Versión de Spring Boot utilizada en el proyecto. Por ejemplo: 2.5.0.
+junit.version: Versión de JUnit utilizada para las pruebas unitarias. Por ejemplo: 5.7.2.
+Configuración de los Requerimientos:
+Servidores de Aplicación y Bases de Datos:
+
+Especificar los puertos y direcciones URL de los servidores de aplicación y bases de datos en los archivos de configuración correspondientes.
+Configurar las credenciales de acceso a la base de datos según sea necesario.
+Paquetes Adicionales:
+
+Especificar las versiones de los paquetes adicionales utilizados en el proyecto en los archivos de configuración o en el archivo pom.xml de Maven.
+Asegurarse de que las versiones especificadas sean compatibles con las funcionalidades requeridas por el proyecto.
+
+
+
 # Uso
 Este software está destinado para uso interno dentro del departamento correspondiente de la empresa.
 Los permisos de acceso variarán según las responsabilidades individuales de cada usuario.

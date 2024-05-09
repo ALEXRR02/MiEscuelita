@@ -1,7 +1,11 @@
 # Taller de productividad basada en tecnologicas
 Software de gestion adiministrativa para la Guarderia Mi escuelita 
 
-# Plantamiento del problema
+
+# Descripción
+El desarrollo de un sistema de gestión de documentos para la Guardería Mi Escuelita busca optimizar procesos administrativos y asegurar el cumplimiento de estándares de calidad, especialmente los establecidos por el IMSS. Surge de un análisis de las dificultades en la gestión de archivos relacionados con la afiliación al IMSS y otros aspectos administrativos. Los beneficios incluyen mayor eficiencia operativa, cumplimiento normativo, seguridad de la información y facilitación de la toma de decisiones. Los objetivos específicos son mejorar la gestión de documentos, agilizar el acceso y almacenamiento de los mismos, garantizar el cumplimiento normativo, incrementar la eficiencia operativa, mejorar la seguridad de la información, facilitar la toma de decisiones y mejorar la experiencia del usuario.
+
+# Problema identificado
 La Guardería Mi Escuelita, ubicada en Toluca, Estado de México, enfrenta 
 desafíos significativos en la gestión de archivos relacionados con la 
 afiliación al Instituto Mexicano del Seguro Social (IMSS) y los estándares 

@@ -21,17 +21,68 @@ Debido a un acuerdo de confidencialidad con nuestro cliente, no podemos divulgar
 
 Dado este contexto, hemos decidido presentar una versión simplificada del proyecto en HTML y JavaScript en este repositorio público de GitHub. Esto nos permite compartir una representación visual del proyecto y demostrar algunos de los conceptos clave sin comprometer la confidencialidad de la implementación final en Java.
 
-# Requisitos
+# Requisitos solicitados
 
 Se requiere un diseño intuitivo, simple y fácil de usar.
 Es necesario poder visualizar la información de manera clara.
 Debe haber una opción para agregar nueva información directamente desde el software.
 Se debe permitir guardar nueva información, como detalles de empleados, planos y estándares de calidad actualizados.
 
+# Requerimentos de la aplicación
+Servidores:
+  
+  -Aplicación web: Apache Tomcat 9.0
+  
+  -Base de datos: MySQL Server 8.0
+  
+  -Servidor de aplicaciones: WildFly 20.0
+
+Paquetes adicionales:
+
+  -Framework de desarrollo web: Spring Boot 2.5.0
+  
+  -Manejador de dependencias: Maven 3.8.1
+  
+  -Biblioteca de pruebas: JUnit 5.7.2
+  
+  -Herramienta de integración continua: Drone 1.0
+
 # Requisitos de Java
-Se debe verificar la versión actual de Java.
-Para poder ejecutar el software, es imprescindible instalar la versión más reciente de Java.
-Se necesita configurar el entorno de desarrollo Java.
+JDK 11 (OpenJDK 11.0.12)
+
+# Instalación
+
+Ambiente de desarrollo:
+
+-Descarga e instala JDK 11 desde el sitio web oficial de OpenJDK.
+
+-Instala Apache Maven 3.8.1 siguiendo las instrucciones de instalación en el sitio web de Maven.
+
+-Configura las variables de entorno JAVA_HOME y MAVEN_HOME según corresponda.
+
+-Clona el repositorio del proyecto desde GitHub.
+
+-Abre el proyecto en tu IDE preferido.
+
+Ejecución de pruebas manualmente:
+
+-Abre una terminal y navega hasta el directorio raíz del proyecto.
+Ejecuta el comando mvn test para ejecutar todas las pruebas del proyecto.
+Observa los resultados de las pruebas en la consola y en los informes generados.
+
+Implementación en producción en un ambiente local:
+
+-Configura un servidor Apache Tomcat 9.0 en tu máquina local.
+
+-Crea una base de datos MySQL Server 8.0 y configura las credenciales de acceso.
+
+-Construye el proyecto utilizando Maven con el comando mvn clean install.
+
+-Despliega el archivo WAR generado en el servidor Tomcat.
+
+-Configura el archivo de propiedades de la aplicación para apuntar a la base de datos MySQL local.
+
+-Inicia el servidor Tomcat y accede a la aplicación desde tu navegador web.
 
 # Modificación del Código
 Para realizar cambios en el código, se debe instalar y configurar un entorno de desarrollo integrado (IDE) preferido.

@@ -18,7 +18,7 @@ El desarrollo de un sistema de gestión de documentos para la Guardería Mi Escu
 
 -Manual de usuario
 
--Guía de contribución para usuarios 
+-Guía de contribución para usuarios (https://github.com/ALEXRR02/MiEscuelita/blob/main/Gu%C3%ADa.md)
 
 # Problema identificado
 La Guardería Mi Escuelita, ubicada en Toluca, Estado de México, enfrenta 

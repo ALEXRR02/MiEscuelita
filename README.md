@@ -5,6 +5,21 @@ Software de gestion adiministrativa para la Guarderia Mi escuelita
 # Descripción
 El desarrollo de un sistema de gestión de documentos para la Guardería Mi Escuelita busca optimizar procesos administrativos y asegurar el cumplimiento de estándares de calidad, especialmente los establecidos por el IMSS. Surge de un análisis de las dificultades en la gestión de archivos relacionados con la afiliación al IMSS y otros aspectos administrativos. Los beneficios incluyen mayor eficiencia operativa, cumplimiento normativo, seguridad de la información y facilitación de la toma de decisiones. Los objetivos específicos son mejorar la gestión de documentos, agilizar el acceso y almacenamiento de los mismos, garantizar el cumplimiento normativo, incrementar la eficiencia operativa, mejorar la seguridad de la información, facilitar la toma de decisiones y mejorar la experiencia del usuario.
 
+# Tabla de contenido
+-Página principal (https://github.com/ALEXRR02/MiEscuelita/blob/main/Index.html)
+
+-Página que muestra la información de los maestros (https://github.com/ALEXRR02/MiEscuelita/blob/main/maestros.html)
+
+-Página que muestra los planos (https://github.com/ALEXRR02/MiEscuelita/blob/main/planos.html)
+
+-Página que muestra las normativas (https://github.com/ALEXRR02/MiEscuelita/blob/main/calidad.html)
+
+-Software para testeo automatico (https://github.com/ALEXRR02/MiEscuelita/blob/main/.drone.yml)
+
+-Manual de usuario
+
+-Guía de contribución para usuarios 
+
 # Problema identificado
 La Guardería Mi Escuelita, ubicada en Toluca, Estado de México, enfrenta 
 desafíos significativos en la gestión de archivos relacionados con la 
@@ -91,32 +106,34 @@ Luego, se debe abrir la carpeta del proyecto dentro del IDE.
 # Configuración
 Archivos de Configuración:
 
-application.properties: Este archivo contiene la configuración general de la aplicación, como la URL de la base de datos, el puerto del servidor, etc. Se encuentra en la carpeta de recursos del proyecto.
+-application.properties: Este archivo contiene la configuración general de la aplicación, como la URL de la base de datos, el puerto del servidor, etc. Se encuentra en la carpeta de recursos del proyecto.
 Configuración de los Requerimientos:
 
 Servidores de Aplicación y Bases de Datos:
-server.port: Puerto en el que se ejecutará el servidor de la aplicación. Valor predeterminado: 8080.
-spring.datasource.url: URL de conexión a la base de datos MySQL. Por ejemplo: jdbc:mysql://localhost:3306/nombre_base_datos.
-spring.datasource.username: Nombre de usuario de la base de datos MySQL.
-spring.datasource.password: Contraseña de la base de datos MySQL.
+-server.port: Puerto en el que se ejecutará el servidor de la aplicación. Valor predeterminado: 8080.
+
+-spring.datasource.url: URL de conexión a la base de datos MySQL. Por ejemplo: jdbc:mysql://localhost:3306/nombre_base_datos.
+
+-spring.datasource.username: Nombre de usuario de la base de datos MySQL.
+
+-spring.datasource.password: Contraseña de la base de datos MySQL.
+
 Paquetes Adicionales:
-spring.version: Versión de Spring Boot utilizada en el proyecto. Por ejemplo: 2.5.0.
-junit.version: Versión de JUnit utilizada para las pruebas unitarias. Por ejemplo: 5.7.2.
-Configuración de los Requerimientos:
+-spring.version: Versión de Spring Boot utilizada en el proyecto. Por ejemplo: 2.5.0.
+
+-junit.version: Versión de JUnit utilizada para las pruebas unitarias. Por ejemplo: 5.7.2.
+
+
+# Configuración de los Requerimientos:
 Servidores de Aplicación y Bases de Datos:
 
-Especificar los puertos y direcciones URL de los servidores de aplicación y bases de datos en los archivos de configuración correspondientes.
+-Especificar los puertos y direcciones URL de los servidores de aplicación y bases de datos en los archivos de configuración correspondientes.
 Configurar las credenciales de acceso a la base de datos según sea necesario.
 Paquetes Adicionales:
 
-Especificar las versiones de los paquetes adicionales utilizados en el proyecto en los archivos de configuración o en el archivo pom.xml de Maven.
+-Especificar las versiones de los paquetes adicionales utilizados en el proyecto en los archivos de configuración o en el archivo pom.xml de Maven.
 Asegurarse de que las versiones especificadas sean compatibles con las funcionalidades requeridas por el proyecto.
 
-
-
-# Uso
-Este software está destinado para uso interno dentro del departamento correspondiente de la empresa.
-Los permisos de acceso variarán según las responsabilidades individuales de cada usuario.
 
 # Drone para Pruebas
 Cada vez que realizamos una modificación en el repositorio de GitHub, Drone automáticamente ejecuta una serie de pruebas para verificar la integridad y el rendimiento del código. Estas pruebas incluyen la compilación del proyecto, la ejecución de pruebas unitarias y cualquier otra validación necesaria para asegurar que el código cumple con nuestros estándares de calidad.

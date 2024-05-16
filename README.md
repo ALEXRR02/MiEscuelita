@@ -134,6 +134,13 @@ Paquetes Adicionales:
 -Especificar las versiones de los paquetes adicionales utilizados en el proyecto en los archivos de configuración o en el archivo pom.xml de Maven.
 Asegurarse de que las versiones especificadas sean compatibles con las funcionalidades requeridas por el proyecto.
 
+# Manual de usuario
+-Manual de usuario:
+[Manual de Usuario.pdf](https://github.com/ALEXRR02/MiEscuelita/files/15329317/Manual.de.Usuario.pdf)
+
+-Manual de usuario como administrador: 
+[Manual de Usuario Administrativo.pdf](https://github.com/ALEXRR02/MiEscuelita/files/15329321/Manual.de.Usuario.Administrativo.pdf)
+
 
 # Drone para Pruebas
 Cada vez que realizamos una modificación en el repositorio de GitHub, Drone automáticamente ejecuta una serie de pruebas para verificar la integridad y el rendimiento del código. Estas pruebas incluyen la compilación del proyecto, la ejecución de pruebas unitarias y cualquier otra validación necesaria para asegurar que el código cumple con nuestros estándares de calidad.
